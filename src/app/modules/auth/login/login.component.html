@@ -11,18 +11,16 @@
                 <img alt="Logo" class="logo-img" src="/assets/images/logo.png" width="200px">
             </div>
 
-            <h4 class="fw-300 c-grey-900 mT-20 mB-40">Bem vindo ao sistema. Faça login para acessa-lo.</h4>
+            <h4 class="fw-300 c-grey-900 mT-20 mB-40">Welcome to the system. Sign in to access it.</h4>
 
-            <!--@include('includes.messages')-->
-
-            <form (submit)="sendLogin()">
+            <form (submit)="sendLoginForm()">
                 <div class="form-group form-group-label">
                     <div class="input-group">
-                        <input type="email" class="form-control" name="email" value="" [(ngModel)]="user.email" />
-                        <label>Insira seu email</label>
+                        <input type="email" class="form-control" name="email" value="" />
+                        <label>Enter your email</label>
                         <div class="input-group-prepend">
                             <div class="input-group-text input-tooltip" data-toggle="tooltip"
-                                 title="Lorem ipsum dolor sit amet, consetetur sadipscing elitr.">
+                                 title="We'll never share your email with anyone else.">
                                 <i class="fas fa-question-circle fa-lg"></i>
                             </div>
                         </div>
@@ -32,8 +30,8 @@
 
                 <div class="form-group form-group-label">
                     <div class="input-group">
-                        <input type="password" class="form-control" name="password" [(ngModel)]="user.password">
-                        <label>Insira sua senha</label>
+                        <input type="password" class="form-control" name="password" />
+                        <label>Enter your password</label>
                         <div class="input-group-prepend">
                             <div class="input-group-text input-password">
                                 <i class="far fa-eye-slash fa-lg"></i>
@@ -49,13 +47,13 @@
                             <div class="checkbox checkbox-circle checkbox-info peers ai-c">
                                 <input type="checkbox" class="peer" id="remember" name="remember">
                                 <label class="peers peer-greed js-sb ai-c" for="remember">
-                                    <span class="peer peer-greed">Manter-me conectado</span>
+                                    <span class="peer peer-greed">Keep me logged in</span>
                                 </label>
                             </div>
                         </div>
 
                         <div class="peer">
-                            <button class="btn btn-primary text-uppercase">Realizar login</button>
+                            <button class="btn btn-primary text-uppercase">Login</button>
                         </div>
                     </div>
                 </div>
@@ -64,11 +62,11 @@
             <div class="mT-40 mB-10">
                 <ul class="list-inline text-center mB-20">
                     <li class="list-inline-item mX-20 mB-10">
-                        <a routerLink="/esqueceu-sua-senha" class="btn btn-outline-primary">Esqueceu sua senha?</a>
+                        <a routerLink="/forgot-password" class="btn btn-outline-primary">Forgot your password?</a>
                     </li>
 
                     <li class="list-inline-item mX-20 mB-10">
-                        <a routerLink="/cadastro" class="btn btn-outline-primary">Criar conta</a>
+                        <a routerLink="/create-account" class="btn btn-outline-primary">Create account</a>
                     </li>
                 </ul>
 

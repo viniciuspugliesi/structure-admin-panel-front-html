@@ -12,4 +12,7 @@ export class UnverifiedComponent implements OnInit {
     ngOnInit() {
     }
 
+    sendFormUnverified() {
+
+    }
 }

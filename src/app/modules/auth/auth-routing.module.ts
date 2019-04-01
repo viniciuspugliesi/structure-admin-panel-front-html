@@ -8,10 +8,10 @@ import {UnverifiedComponent} from './unverified/unverified.component';
 
 const routes: Routes = [
     {path: 'login', component: LoginComponent},
-    {path: 'cadastro', component: RegisterComponent},
-    {path: 'esqueceu-sua-senha', component: ForgotPasswordComponent},
-    {path: 'recuperar-senha', component: ResetPasswordComponent},
-    {path: 'email-nao-verificado', component: UnverifiedComponent},
+    {path: 'create-account', component: RegisterComponent},
+    {path: 'forgot-password', component: ForgotPasswordComponent},
+    {path: 'reset-password', component: ResetPasswordComponent},
+    {path: 'email-unverified', component: UnverifiedComponent},
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forChild(routes);

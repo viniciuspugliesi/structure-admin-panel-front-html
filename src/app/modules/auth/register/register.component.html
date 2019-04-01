@@ -12,38 +12,36 @@
             </div>
 
             <h4 class="fw-300 c-grey-900 mT-50 mB-60">
-                Preencha os dados abaixo para realizar seu cadastro no sistema.
+                Fill in the data below to register in the system.
             </h4>
 
-        <!--@include('includes.messages')-->
-
-            <form action="/cadastro" method="post">
+            <form (submit)="sendRegisterForm()">
 
                 <div class="row">
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-12 col-sm-12">
                         <div class="form-group form-group-label">
                             <input type="text" name="name" value="" class="form-control" />
-                            <label>Insira seu nome</label>
+                            <label>Enter your name</label>
                             <div class="form-line"></div>
                             <!--<small class="form-text text-muted">We'll never share your email with anyone else.</small>-->
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-12 col-sm-12">
                         <div class="form-group form-group-label">
                             <input type="email" name="email" value="" class="form-control" />
-                            <label>Insira seu email</label>
+                            <label>Enter your email</label>
                             <div class="form-line"></div>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-12 col-sm-12">
                         <div class="form-group form-group-label">
                             <div class="input-group">
                                 <input type="password" name="password" class="form-control" />
-                                <label>Insira sua senha</label>
+                                <label>Enter your password</label>
                                 <div class="input-group-prepend">
                                     <div class="input-group-text input-password">
                                         <i class="far fa-eye-slash fa-lg"></i>
@@ -54,11 +52,11 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-12 col-sm-12">
                         <div class="form-group form-group-label">
                             <div class="input-group">
                                 <input type="password" name="password_confirmation" class="form-control" />
-                                <label>Repita sua senha</label>
+                                <label>Repeat your password</label>
                                 <div class="input-group-prepend">
                                     <div class="input-group-text input-password">
                                         <i class="far fa-eye-slash fa-lg"></i>
@@ -74,7 +72,7 @@
                     <div class="peers ai-c jc-sb fxw-nw">
                         <div class="peer"></div>
                         <div class="peer">
-                            <button class="btn btn-primary text-uppercase">Realizar cadastro</button>
+                            <button class="btn btn-primary text-uppercase">Register</button>
                         </div>
                     </div>
                 </div>
@@ -83,7 +81,7 @@
             <div class="mT-70">
                 <ul class="list-inline text-center mB-20">
                     <li class="list-inline-item mX-20">
-                        <a routerLink="/login" class="btn btn-outline-primary">Já possui cadastro? Realizar login</a>
+                        <a routerLink="/login" class="btn btn-outline-primary">Already have a registration? Login</a>
                     </li>
                 </ul>
 

@@ -23,11 +23,11 @@ const routes: Routes = [
         ]
     },
     {
-        path: 'erro', data: {base: true}, component: LayoutCleanComponent, children: [
+        path: 'error', data: {base: true}, component: LayoutCleanComponent, children: [
             {path: '', loadChildren: './modules/errors/error.module#ErrorModule'},
         ]
     },
-    {path: '**', redirectTo: '/erro/404'},
+    {path: '**', redirectTo: '/error/404'},
 ];
 
 @NgModule({
