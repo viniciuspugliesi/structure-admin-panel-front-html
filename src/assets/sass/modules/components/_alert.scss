@@ -1,9 +1,13 @@
+// Alert
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
 .alert {
-    padding: 15px;
+    width: 100%;
+    display: flex;
+    padding: 10 px;
 
     &:before {
-        font-family: "Font Awesome 5 Pro";
+        font-family: FontAwesome;
         margin-right: 5px;
         width: 25px;
         display: flex;
@@ -11,53 +15,43 @@
         align-self: center;
     }
 
-    &.alert {
-        &--success {
-            border: 1px solid $success;
-            border-left: 8px solid $success;
-            color: $success;
+    &--success {
+        border: 1px solid $alert-success--color;
+        border-left: 8px solid $alert-success--color;
+        color: $alert-success--color;
 
-            &:before {
-                float: left;
-                content: "\f00c";
-                font-weight: 900;
-            }
+        &:before {
+            content: $alert-success--icon;
         }
+    }
 
-        &--danger {
-            border: 1px solid $danger;
-            border-left: 8px solid $danger;
-            color: $danger;
+    &--danger {
+        border: 1px solid $alert-danger--color;
+        border-left: 8px solid $alert-danger--color;
+        color: $alert-danger--color;
 
-            &:before {
-                float: left;
-                content: "\f00d";
-                font-weight: 900;
-            }
+        &:before {
+            content: $alert-danger--icon;
         }
+    }
 
-        &--warning {
-            border: 1px solid $warning;
-            border-left: 8px solid $warning;
-            color: $warning;
+    &--warning {
+        border: 1px solid $alert-warning--color;
+        border-left: 8px solid $alert-warning--color;
+        color: $alert-warning--color;
 
-            &:before {
-                float: left;
-                content: "\f12a";
-                font-weight: 900;
-            }
+        &:before {
+            content: $alert-warning--icon;
         }
+    }
 
-        &--info {
-            border: 1px solid $info;
-            border-left: 8px solid $info;
-            color: $info;
+    &--info {
+        border: 1px solid $alert-info--color;
+        border-left: 8px solid $alert-info--color;
+        color: $alert-info--color;
 
-            &:before {
-                float: left;
-                content: "\f129";
-                font-weight: 900;
-            }
+        &:before {
+            content: $alert-info--icon;
         }
     }
 }

@@ -7,9 +7,6 @@ import {AppRoutingModule} from './app-routing.module';
 import {SharedModule} from './shared/shared.module';
 import {CoreModule} from './core/core.module';
 
-declare let require: any;
-require('./../assets/js/utils');
-
 @NgModule({
     imports: [
         FormsModule,

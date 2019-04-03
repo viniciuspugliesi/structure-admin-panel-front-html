@@ -258,9 +258,12 @@
 .form-group-label {
     display: block;
     position: relative;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
     border-bottom: 1px solid $md-dark-text-dividers;
+
+    &:has(.form-text) {
+        margin-bottom: 45px;
+    }
 
     label {
         transform-origin: bottom left;
@@ -346,6 +349,23 @@
 
         &.input-tooltip {
             cursor: help;
+        }
+    }
+
+    .form-text {
+        margin-top: 38px;
+    }
+
+    &.error {
+        border-bottom-color: $alert-danger--color;
+        margin-bottom: 45px;
+
+        label {
+            color: $alert-danger--color;
+        }
+
+        .form-text {
+            color: $alert-danger--color;
         }
     }
 }

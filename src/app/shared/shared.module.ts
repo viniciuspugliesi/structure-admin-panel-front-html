@@ -1,7 +1,5 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {ModalComponent} from './components/modal/modal.component';
-import {ModalService} from './components/modal/modal.service';
 import {FormsModule} from '@angular/forms';
 import {MinNumberPipe} from './pipes/min-number/min-number.pipe';
 import {TimestampPipe} from './pipes/timestamp/timestamp.pipe';
@@ -24,7 +22,6 @@ import {RedirectIfNotAuthenticatedGuard} from './guards/redirect-if-not-authenti
         FormsModule,
     ],
     declarations: [
-        ModalComponent,
         PricePipe,
         MinNumberPipe,
         TimestampPipe,
@@ -34,7 +31,6 @@ import {RedirectIfNotAuthenticatedGuard} from './guards/redirect-if-not-authenti
         NumberDirective,
     ],
     exports: [
-        ModalComponent,
         PricePipe,
         MinNumberPipe,
         TimestampPipe,
@@ -49,7 +45,6 @@ import {RedirectIfNotAuthenticatedGuard} from './guards/redirect-if-not-authenti
         NumberHelper,
         MoneyHelper,
         ArrayHelper,
-        ModalService,
         DateTimeHelper,
         RedirectIfAuthenticatedGuard,
         RedirectIfNotAuthenticatedGuard,

@@ -11,5 +11,4 @@ export class HelpersListComponent implements OnInit {
 
     ngOnInit() {
     }
-
 }

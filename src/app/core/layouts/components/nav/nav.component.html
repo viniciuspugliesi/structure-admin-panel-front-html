@@ -4,23 +4,23 @@
         <div class="sidebar-logo">
             <div class="peers ai-c fxw-nw">
                 <div class="peer peer-greed">
-                    <a class="sidebar-link td-n" href="#">
+                    <a routerLink="/dashboard" class="sidebar-link td-n">
                         <div class="peers ai-c fxw-nw">
                             <div class="peer">
                                 <div class="logo">
-                                    <img alt="" src="/assets/images/logo-70x65.png">
+                                    <img alt="Logo" src="/assets/images/logo-70x65.png">
                                 </div>
                             </div>
                             <div class="peer peer-greed">
-                                <h5 class="lh-1 mB-0 logo-text">Adminator</h5>
+                                <h5 class="lh-1 mB-0 logo-text">Administrator</h5>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="peer">
-                    <div class="mobile-toggle sidebar-toggle">
-                        <a class="td-n" href="">
-                            <i class="ti-arrow-circle-left"></i>
+                <div class="peer mL-10">
+                    <div class="mobile-toggle">
+                        <a href="#" prevent-default (click)="toggleMenu()" class="td-n">
+                            <i class="fal fa-arrow-circle-left"></i>
                         </a>
                     </div>
                 </div>
@@ -29,8 +29,8 @@
 
         <!-- ### $Sidebar Menu ### -->
         <ul class="sidebar-menu scrollable pos-r scrollable">
-            <li class="nav-item mT-30 active">
-                <a class="sidebar-link" href="#">
+            <li class="nav-item mT-30">
+                <a routerLink="/dashboard" class="sidebar-link">
                     <span class="icon-holder">
                         <i class="c-blue-500 fal fa-home"></i>
                     </span>
@@ -38,7 +38,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class='sidebar-link' href="#">
+                <a routerLink="/email" class='sidebar-link'>
                     <span class="icon-holder">
                         <i class="c-brown-500 fal fa-envelope"></i>
                     </span>
@@ -46,7 +46,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class='sidebar-link' href="#">
+                <a routerLink="/compose" class='sidebar-link'>
                     <span class="icon-holder">
                         <i class="c-blue-500 fal fa-share-square"></i>
                     </span>
@@ -54,7 +54,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class='sidebar-link' href="#">
+                <a routerLink="/calendar" class='sidebar-link'>
                     <span class="icon-holder">
                         <i class="c-deep-orange-500 fal fa-calendar-alt"></i>
                     </span>
@@ -62,7 +62,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class='sidebar-link' href="#">
+                <a routerLink="/chat" class='sidebar-link'>
                     <span class="icon-holder">
                         <i class="c-deep-purple-500 fal fa-comments"></i>
                     </span>
@@ -70,7 +70,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class='sidebar-link' href="#">
+                <a routerLink="/charts" class='sidebar-link'>
                     <span class="icon-holder">
                         <i class="c-indigo-500 fal fa-chart-bar"></i>
                     </span>
@@ -78,7 +78,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class='sidebar-link' href="#">
+                <a routerLink="/forms" class='sidebar-link'>
                     <span class="icon-holder">
                         <i class="c-light-blue-500 fal fa-pencil"></i>
                     </span>
@@ -86,7 +86,7 @@
                 </a>
             </li>
             <li class="nav-item dropdown">
-                <a class="sidebar-link" href="#">
+                <a routerLink="/ui-elements" class="sidebar-link">
                     <span class="icon-holder">
                         <i class="c-pink-500 fal fa-palette"></i>
                     </span>
@@ -94,7 +94,7 @@
                 </a>
             </li>
             <li class="nav-item dropdown">
-                <a class="dropdown-toggle" href="javascript:void(0);">
+                <a href="#" prevent-default class="dropdown-toggle">
                     <span class="icon-holder">
                         <i class="c-orange-500 fal fa-list"></i>
                     </span>
@@ -105,15 +105,15 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a class='sidebar-link' href="#">Basic Table</a>
+                        <a routerLink="/tables/basic-tables" class='sidebar-link' >Basic Table</a>
                     </li>
                     <li>
-                        <a class='sidebar-link' href="#">Data Table</a>
+                        <a routerLink="/tables/data-tables" class='sidebar-link' >Data Table</a>
                     </li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="dropdown-toggle" href="javascript:void(0);">
+                <a href="#" prevent-default class="dropdown-toggle">
                     <span class="icon-holder">
                         <i class="c-purple-500 fal fa-map"></i>
                     </span>
@@ -124,15 +124,15 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a href="#">Google Map</a>
+                        <a routerLink="/maps/google-maps">Google Map</a>
                     </li>
                     <li>
-                        <a href="#">Vector Map</a>
+                        <a routerLink="/maps/vector-maps">Vector Map</a>
                     </li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="dropdown-toggle" href="javascript:void(0);">
+                <a href="#" prevent-default class="dropdown-toggle" >
                     <span class="icon-holder">
                         <i class="c-red-500 far fa-copy"></i>
                     </span>
@@ -143,24 +143,24 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li>
-                        <a class='sidebar-link' href="#">Blank</a>
+                        <a routerLink="/page-blank" class='sidebar-link' >Blank</a>
                     </li>
                     <li>
-                        <a class='sidebar-link' href="#">404</a>
+                        <a routerLink="/error/404" class='sidebar-link' >404</a>
                     </li>
                     <li>
-                        <a class='sidebar-link' href="#">500</a>
+                        <a routerLink="/error/500" class='sidebar-link' >500</a>
                     </li>
                     <li>
-                        <a class='sidebar-link' href="#">Sign In</a>
+                        <a routerLink="/login" class='sidebar-link' >Sign In</a>
                     </li>
                     <li>
-                        <a class='sidebar-link' href="#">Sign Up</a>
+                        <a routerLink="/create-account" class='sidebar-link' >Sign Up</a>
                     </li>
                 </ul>
             </li>
-            <li class="nav-item dropdown">
-                <a class="dropdown-toggle" href="javascript:void(0);">
+            <li class="nav-item dropdown mB-30">
+                <a href="#" prevent-default class="dropdown-toggle">
                     <span class="icon-holder">
                         <i class="c-teal-500 fal fa-list-ul"></i>
                     </span>
@@ -171,12 +171,12 @@
                 </a>
                 <ul class="dropdown-menu">
                     <li class="nav-item dropdown">
-                        <a href="javascript:void(0);">
+                        <a href="#" prevent-default>
                             <span>Menu Item</span>
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="javascript:void(0);">
+                        <a href="#" prevent-default>
                             <span>Menu Item</span>
                             <span class="arrow">
                                 <i class="fal fa-angle-right fa-2x"></i>
@@ -184,10 +184,23 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="javascript:void(0);">Menu Item</a>
+                                <a href="#" prevent-default>Menu Item</a>
                             </li>
-                            <li>
-                                <a href="javascript:void(0);">Menu Item</a>
+                            <li class="nav-item dropdown">
+                                <a href="#" prevent-default>
+                                    <span>Menu Item</span>
+                                    <span class="arrow">
+                                <i class="fal fa-angle-right fa-2x"></i>
+                            </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" prevent-default>Menu Item</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" prevent-default>Menu Item</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </li>

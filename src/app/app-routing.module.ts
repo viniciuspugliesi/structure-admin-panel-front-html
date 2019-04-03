@@ -9,11 +9,7 @@ import {RedirectIfNotAuthenticatedGuard} from './shared/guards/redirect-if-not-a
 const routes: Routes = [
     {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
     {
-        path: 'dashboard',
-        data: {base: true},
-        component: LayoutDefaultComponent,
-        canActivate: [RedirectIfNotAuthenticatedGuard],
-        children: [
+        path: 'dashboard', data: {base: true}, component: LayoutDefaultComponent, canActivate: [RedirectIfNotAuthenticatedGuard], children: [
             {path: '', loadChildren: './modules/dashboard/dashboard.module#DashboardModule'},
         ]
     },
