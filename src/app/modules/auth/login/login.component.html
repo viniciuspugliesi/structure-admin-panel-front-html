@@ -16,7 +16,7 @@
             <form (submit)="sendLoginForm()">
                 <div class="form-group form-group-label">
                     <div class="input-group">
-                        <input type="email" class="form-control" name="email" value="" />
+                        <input class="form-control" name="email" type="email" value=""/>
                         <label>Enter your email</label>
                         <div class="input-group-prepend">
                             <div class="input-group-text input-tooltip" data-toggle="tooltip"
@@ -30,7 +30,7 @@
 
                 <div class="form-group form-group-label">
                     <div class="input-group">
-                        <input type="password" class="form-control" name="password" />
+                        <input class="form-control" name="password" type="password"/>
                         <label>Enter your password</label>
                         <div class="input-group-prepend">
                             <div class="input-group-text input-password">
@@ -45,7 +45,7 @@
                     <div class="peers ai-c jc-sb fxw-nw">
                         <div class="peer">
                             <div class="checkbox checkbox-circle checkbox-info peers ai-c">
-                                <input type="checkbox" class="peer" id="remember" name="remember">
+                                <input class="peer" id="remember" name="remember" type="checkbox">
                                 <label class="peers peer-greed js-sb ai-c" for="remember">
                                     <span class="peer peer-greed">Keep me logged in</span>
                                 </label>
@@ -62,11 +62,11 @@
             <div class="mT-40 mB-10">
                 <ul class="list-inline text-center mB-20">
                     <li class="list-inline-item mX-20 mB-10">
-                        <a routerLink="/forgot-password" class="btn btn-outline-primary">Forgot your password?</a>
+                        <a class="btn btn-outline-primary" routerLink="/forgot-password">Forgot your password?</a>
                     </li>
 
                     <li class="list-inline-item mX-20 mB-10">
-                        <a routerLink="/create-account" class="btn btn-outline-primary">Create account</a>
+                        <a class="btn btn-outline-primary" routerLink="/create-account">Create account</a>
                     </li>
                 </ul>
 

@@ -6,6 +6,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {AppRoutingModule} from './app-routing.module';
 import {SharedModule} from './shared/shared.module';
 import {CoreModule} from './core/core.module';
+import {PageBlankComponent} from './modules/page-blank/page-blank.component';
 
 @NgModule({
     imports: [
@@ -17,7 +18,8 @@ import {CoreModule} from './core/core.module';
         CoreModule,
     ],
     declarations: [
-        AppComponent
+        AppComponent,
+        PageBlankComponent
     ],
     providers: [],
     bootstrap: [

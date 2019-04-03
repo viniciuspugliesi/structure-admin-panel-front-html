@@ -22,7 +22,7 @@ export class CoreService {
                 let self = this;
                 setTimeout(function () {
                     self.setLoader(false);
-                }, 1000);
+                }, 600);
             }
         });
     }
@@ -62,8 +62,8 @@ export class CoreService {
     }
 
     reloadInputs() {
-        $(document).on('change', '.form-group-label .form-control', function() {
-            if ($(this).val() && ! $(this).hasClass('has-value')) {
+        $(document).on('change', '.form-group-label .form-control', function () {
+            if ($(this).val() && !$(this).hasClass('has-value')) {
                 $(this).addClass('has-value');
             } else if (!$(this).val()) {
                 $(this).removeClass('has-value');
@@ -80,7 +80,7 @@ export class CoreService {
     }
 
     reloadInputPassword() {
-        $(document).on('click', '.input-password', function() {
+        $(document).on('click', '.input-password', function () {
             let i = $(this).find('i');
             let input = $(this).parent().parent().parent().find('input');
 
@@ -92,7 +92,9 @@ export class CoreService {
                 input.attr('type', 'password');
             }
 
-            setTimeout(() => { input.focus(); }, 100);
+            setTimeout(() => {
+                input.focus();
+            }, 100);
         });
     }
 }
