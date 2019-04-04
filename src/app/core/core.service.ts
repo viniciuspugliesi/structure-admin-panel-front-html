@@ -3,6 +3,7 @@ import {BehaviorSubject} from 'rxjs/BehaviorSubject';
 import {ActivationEnd, NavigationEnd, NavigationStart, Router} from '@angular/router';
 import {Observable} from 'rxjs/Observable';
 import PerfectScrollbar from 'perfect-scrollbar';
+import Masonry from 'masonry-layout';
 
 declare let $: any;
 
@@ -33,6 +34,8 @@ export class CoreService {
         this.reloadInputPassword();
         this.reloadPopover();
         this.reloadTooltip();
+        this.reloadMasonry();
+        this.reloadDatepicker();
     }
 
     setLoader(status: boolean): void {
@@ -96,5 +99,19 @@ export class CoreService {
                 input.focus();
             }, 100);
         });
+    }
+
+    reloadMasonry() {
+        if ($('.masonry').length > 0) {
+            new Masonry('.masonry', {
+                itemSelector: '.masonry-item',
+                columnWidth: '.masonry-sizer',
+                percentPosition: true,
+            });
+        }
+    }
+
+    reloadDatepicker() {
+        $('.datepicker').datepicker();
     }
 }

@@ -1,4 +1,6 @@
-import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Title} from '@angular/platform-browser';
+import {DataTableService} from './data-table.service';
 
 declare let $: any;
 
@@ -7,14 +9,26 @@ declare let $: any;
     templateUrl: './data-table.component.html'
 })
 export class DataTableComponent implements OnInit {
-    @ViewChild('selector')
-    private selector: ElementRef;
+    public data: Array<any> = [];
 
-    constructor() {
+    constructor(private title: Title, private dataTableService: DataTableService) {
     }
 
     ngOnInit() {
-        $(this.selector.nativeElement).DataTable();
+        this.title.setTitle('Datatable - Administrator');
+        this.getData();
     }
 
+    getData(): void {
+        this.dataTableService.getData().subscribe((data: Array<any>) => {
+            this.data = data;
+            this.initDatatable();
+        });
+    }
+
+    initDatatable() {
+        setTimeout(() => {
+            $("#datatable").DataTable();
+        }, 500);
+    }
 }

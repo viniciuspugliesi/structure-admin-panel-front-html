@@ -6,37 +6,32 @@ import {RedirectIfAuthenticatedGuard} from './shared/guards/redirect-if-authenti
 import {LayoutDefaultComponent} from './core/layouts/layout-default/layout-default.component';
 import {RedirectIfNotAuthenticatedGuard} from './shared/guards/redirect-if-not-authenticated/redirect-if-not-authenticated.guard';
 import {PageBlankComponent} from './modules/page-blank/page-blank.component';
+import {UiElementsComponent} from './modules/ui-elements/ui-elements.component';
+import {FormsComponent} from './modules/forms/forms.component';
+import {ChatComponent} from './modules/chat/chat.component';
+import {CalendarComponent} from './modules/calendar/calendar.component';
+import {ChartComponent} from './modules/chart/chart.component';
+import {GoogleMapsComponent} from './modules/google-maps/google-maps.component';
 
 const routes: Routes = [
-    {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
     {
         path: '', data: {base: true}, component: LayoutCleanComponent, canActivate: [RedirectIfAuthenticatedGuard], children: [
             {path: '', loadChildren: './modules/auth/auth.module#AuthModule'},
+            {path: 'error', loadChildren: './modules/errors/error.module#ErrorModule'},
         ]
     },
     {
-        path: 'dashboard', data: {base: true}, component: LayoutDefaultComponent, canActivate: [RedirectIfNotAuthenticatedGuard], children: [
-            {path: '', loadChildren: './modules/dashboard/dashboard.module#DashboardModule'},
-        ]
-    },
-    {
-        path: 'emails', data: {base: true}, component: LayoutDefaultComponent, canActivate: [RedirectIfNotAuthenticatedGuard], children: [
-            {path: '', loadChildren: './modules/email/email.module#EmailModule'},
-        ]
-    },
-    {
-        path: 'tables', data: {base: true}, component: LayoutDefaultComponent, canActivate: [RedirectIfNotAuthenticatedGuard], children: [
-            {path: '', loadChildren: './modules/table/table.module#TableModule'},
-        ]
-    },
-    {
-        path: 'page-blank', data: {base: true}, component: LayoutDefaultComponent, canActivate: [RedirectIfNotAuthenticatedGuard], children: [
-            {path: '', component: PageBlankComponent},
-        ]
-    },
-    {
-        path: 'error', data: {base: true}, component: LayoutCleanComponent, children: [
-            {path: '', loadChildren: './modules/errors/error.module#ErrorModule'},
+        path: '', data: {base: true}, component: LayoutDefaultComponent, canActivate: [RedirectIfNotAuthenticatedGuard], children: [
+            {path: 'dashboard', loadChildren: './modules/dashboard/dashboard.module#DashboardModule'},
+            {path: 'emails', loadChildren: './modules/email/email.module#EmailModule'},
+            {path: 'tables', loadChildren: './modules/table/table.module#TableModule'},
+            {path: 'maps/google-maps', component: GoogleMapsComponent},
+            {path: 'calendar', component: CalendarComponent},
+            {path: 'chat', component: ChatComponent},
+            {path: 'charts', component: ChartComponent},
+            {path: 'forms', component: FormsComponent},
+            {path: 'ui-elements', component: UiElementsComponent},
+            {path: 'page-blank', component: PageBlankComponent},
         ]
     },
     {path: '**', redirectTo: '/error/404'},

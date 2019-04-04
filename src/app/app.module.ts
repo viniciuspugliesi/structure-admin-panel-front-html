@@ -7,6 +7,12 @@ import {AppRoutingModule} from './app-routing.module';
 import {SharedModule} from './shared/shared.module';
 import {CoreModule} from './core/core.module';
 import {PageBlankComponent} from './modules/page-blank/page-blank.component';
+import { UiElementsComponent } from './modules/ui-elements/ui-elements.component';
+import { FormsComponent } from './modules/forms/forms.component';
+import { ChatComponent } from './modules/chat/chat.component';
+import { CalendarComponent } from './modules/calendar/calendar.component';
+import { ChartComponent } from './modules/chart/chart.component';
+import { GoogleMapsComponent } from './modules/google-maps/google-maps.component';
 
 @NgModule({
     imports: [
@@ -19,7 +25,13 @@ import {PageBlankComponent} from './modules/page-blank/page-blank.component';
     ],
     declarations: [
         AppComponent,
-        PageBlankComponent
+        PageBlankComponent,
+        UiElementsComponent,
+        FormsComponent,
+        ChatComponent,
+        CalendarComponent,
+        ChartComponent,
+        GoogleMapsComponent
     ],
     providers: [],
     bootstrap: [

@@ -5,6 +5,7 @@ import {SharedModule} from '../../shared/shared.module';
 import {routing} from './table-routing.module';
 import {BasicTableComponent} from './basic-table/basic-table.component';
 import {DataTableComponent} from './data-table/data-table.component';
+import {DataTableService} from './data-table/data-table.service';
 
 @NgModule({
     imports: [
@@ -16,6 +17,9 @@ import {DataTableComponent} from './data-table/data-table.component';
     declarations: [
         BasicTableComponent,
         DataTableComponent
+    ],
+    providers: [
+        DataTableService
     ]
 })
 export class TableModule {

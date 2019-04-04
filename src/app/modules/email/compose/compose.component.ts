@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Title} from '@angular/platform-browser';
 
 @Component({
     selector: 'app-compose',
@@ -6,10 +7,11 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ComposeComponent implements OnInit {
 
-    constructor() {
+    constructor(private title: Title) {
     }
 
     ngOnInit() {
+        this.title.setTitle('Compose email - Administrator');
     }
 
 }

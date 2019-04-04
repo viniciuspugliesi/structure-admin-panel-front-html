@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Title} from '@angular/platform-browser';
 
 @Component({
     selector: 'app-internal-server-error',
@@ -6,10 +7,11 @@ import {Component, OnInit} from '@angular/core';
 })
 export class InternalServerErrorComponent implements OnInit {
 
-    constructor() {
+    constructor(private title: Title) {
     }
 
     ngOnInit() {
+        this.title.setTitle('Internal server error - Administrator');
     }
 
 }

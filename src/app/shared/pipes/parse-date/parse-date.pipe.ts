@@ -1,9 +1,6 @@
 import {Pipe, PipeTransform} from '@angular/core';
 import {DateTimeHelper} from '../../helpers/date-time-helper';
 
-declare let require: any;
-let dateFormat = require('dateformat');
-
 @Pipe({
     name: 'parseDate'
 })
