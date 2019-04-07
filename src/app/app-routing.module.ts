@@ -10,10 +10,10 @@ import {UiElementsComponent} from './modules/ui-elements/ui-elements.component';
 import {FormsComponent} from './modules/forms/forms.component';
 import {ChatComponent} from './modules/chat/chat.component';
 import {CalendarComponent} from './modules/calendar/calendar.component';
-import {ChartComponent} from './modules/chart/chart.component';
 import {GoogleMapsComponent} from './modules/google-maps/google-maps.component';
 
 const routes: Routes = [
+    { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
     {
         path: '', data: {base: true}, component: LayoutCleanComponent, canActivate: [RedirectIfAuthenticatedGuard], children: [
             {path: '', loadChildren: './modules/auth/auth.module#AuthModule'},
@@ -25,10 +25,10 @@ const routes: Routes = [
             {path: 'dashboard', loadChildren: './modules/dashboard/dashboard.module#DashboardModule'},
             {path: 'emails', loadChildren: './modules/email/email.module#EmailModule'},
             {path: 'tables', loadChildren: './modules/table/table.module#TableModule'},
+            {path: 'charts', loadChildren: './modules/charts/charts.module#ChartsModule'},
             {path: 'maps/google-maps', component: GoogleMapsComponent},
             {path: 'calendar', component: CalendarComponent},
             {path: 'chat', component: ChatComponent},
-            {path: 'charts', component: ChartComponent},
             {path: 'forms', component: FormsComponent},
             {path: 'ui-elements', component: UiElementsComponent},
             {path: 'page-blank', component: PageBlankComponent},
