@@ -16,4 +16,9 @@
 #chat-box {
     height: calc(100vh - #{$header-height} - 60px);
     overflow: auto;
+
+    .paper-send::before {
+        float: left;
+        margin: 5px 0 0 -3px;
+    }
 }

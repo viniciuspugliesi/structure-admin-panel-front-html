@@ -1,0 +1,10 @@
+<div class="full-container">
+    <div class="peers fxw-nw pos-r">
+        <app-contact-list (onChangeConversation)="onChangeConversation($event)"></app-contact-list>
+
+        <div class="peer peer-greed" id='chat-box'>
+            <app-conversation *ngIf="contact" [contact]="contact" (onCloseConversation)="onChangeConversation($event)"></app-conversation>
+            <app-clean-conversation *ngIf="!contact"></app-clean-conversation>
+        </div>
+    </div>
+</div>

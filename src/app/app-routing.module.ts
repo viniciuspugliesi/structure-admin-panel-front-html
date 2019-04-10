@@ -8,8 +8,6 @@ import {RedirectIfNotAuthenticatedGuard} from './shared/guards/redirect-if-not-a
 import {PageBlankComponent} from './modules/page-blank/page-blank.component';
 import {UiElementsComponent} from './modules/ui-elements/ui-elements.component';
 import {FormsComponent} from './modules/forms/forms.component';
-import {ChatComponent} from './modules/chat/chat.component';
-import {CalendarComponent} from './modules/calendar/calendar.component';
 import {GoogleMapsComponent} from './modules/google-maps/google-maps.component';
 
 const routes: Routes = [
@@ -26,9 +24,9 @@ const routes: Routes = [
             {path: 'emails', loadChildren: './modules/email/email.module#EmailModule'},
             {path: 'tables', loadChildren: './modules/table/table.module#TableModule'},
             {path: 'charts', loadChildren: './modules/charts/charts.module#ChartsModule'},
+            {path: 'chat', loadChildren: './modules/chat/chat.module#ChatModule'},
+            {path: 'calendar', loadChildren: './modules/calendar/calendar.module#CalendarModule'},
             {path: 'maps/google-maps', component: GoogleMapsComponent},
-            {path: 'calendar', component: CalendarComponent},
-            {path: 'chat', component: ChatComponent},
             {path: 'forms', component: FormsComponent},
             {path: 'ui-elements', component: UiElementsComponent},
             {path: 'page-blank', component: PageBlankComponent},

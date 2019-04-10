@@ -9,8 +9,6 @@ import {CoreModule} from './core/core.module';
 import {PageBlankComponent} from './modules/page-blank/page-blank.component';
 import {UiElementsComponent} from './modules/ui-elements/ui-elements.component';
 import {FormsComponent} from './modules/forms/forms.component';
-import {ChatComponent} from './modules/chat/chat.component';
-import {CalendarComponent} from './modules/calendar/calendar.component';
 import {GoogleMapsComponent} from './modules/google-maps/google-maps.component';
 
 @NgModule({
@@ -27,9 +25,7 @@ import {GoogleMapsComponent} from './modules/google-maps/google-maps.component';
         PageBlankComponent,
         UiElementsComponent,
         FormsComponent,
-        ChatComponent,
-        CalendarComponent,
-        GoogleMapsComponent
+        GoogleMapsComponent,
     ],
     providers: [],
     bootstrap: [

@@ -114,4 +114,10 @@ export class CoreService {
     reloadDatepicker() {
         $('.datepicker').datepicker();
     }
+
+    scrollTo(element: string) {
+        $('html, body').animate({
+            scrollTop: $(element).offset().top
+        }, 'slow');
+    }
 }

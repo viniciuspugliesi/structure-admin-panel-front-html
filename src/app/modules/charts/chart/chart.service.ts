@@ -10,4 +10,12 @@ export class ChartService {
     getDataLineChart() {
         return this.http.get('./assets/data/chart/line-chart.json');
     }
+
+    getDataScatterChart() {
+        return this.http.get('./assets/data/chart/scatter-chart.json');
+    }
+
+    getDataBarChart() {
+        return this.http.get('./assets/data/chart/bar-chart.json');
+    }
 }
