@@ -8,9 +8,9 @@ import {TotalVisitsComponent} from './dashboard-default/components/total-visits/
 import {TotalPageViewsComponent} from './dashboard-default/components/total-page-views/total-page-views.component';
 import {UniqueVisitorsComponent} from './dashboard-default/components/unique-visitors/unique-visitors.component';
 import {BounceRateComponent} from './dashboard-default/components/bounce-rate/bounce-rate.component';
-import { SalesReportComponent } from './dashboard-default/components/sales-report/sales-report.component';
+import {SalesReportComponent} from './dashboard-default/components/sales-report/sales-report.component';
 import {SharedModule} from '../../shared/shared.module';
-import { TodoListComponent } from './dashboard-default/components/todo-list/todo-list.component';
+import {TodoListComponent} from './dashboard-default/components/todo-list/todo-list.component';
 
 @NgModule({
     imports: [

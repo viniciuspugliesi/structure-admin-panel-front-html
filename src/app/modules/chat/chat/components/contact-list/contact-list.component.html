@@ -2,14 +2,15 @@
     <div class="layers h-100">
         <!-- Search -->
         <div class="bdB layer w-100">
-            <input type="text" (keyup)="search($event)" placeholder="Search contacts..." name="chatSearch"
-                   class="form-constrol p-15 bdrs-0 w-100 bdw-0">
+            <input (keyup)="search($event)" class="form-constrol p-15 bdrs-0 w-100 bdw-0" name="chatSearch"
+                   placeholder="Search contacts..."
+                   type="text">
         </div>
 
         <!-- List -->
         <div class="layer w-100 fxg-1 scrollable pos-r">
             <div *ngIf="contacts.length; else empty">
-                <div *ngFor="let contact of contacts" (click)="showConversation(contact)"
+                <div (click)="showConversation(contact)" *ngFor="let contact of contacts"
                      class="peers fxw-nw ai-c p-20 bdB bgc-white bgcH-grey-50 cur-p">
                     <div class="peer">
                         <img [src]="contact.image" alt="" class="w-3r h-3r bdrs-50p">
@@ -17,7 +18,7 @@
 
                     <div class="peer peer-greed pL-20">
                         <h6 class="mB-0 lh-1 fw-400">{{ contact.name }}</h6>
-                        <small class="lh-1" [ngClass]="handlerClassColor(contact)">{{ contact.status}}</small>
+                        <small [ngClass]="handlerClassColor(contact)" class="lh-1">{{ contact.status}}</small>
                     </div>
                 </div>
             </div>

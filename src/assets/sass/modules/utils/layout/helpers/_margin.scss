@@ -19,113 +19,113 @@ $responsive: true;
 // ---------------------------------------------------------
 
 @for $i from 0 through 4 {
-    .m-#{$i} {
+  .m-#{$i} {
+    margin: #{$i}px !important;
+  }
+  .mT-#{$i} {
+    margin-top: #{$i}px !important;
+  }
+  .mR-#{$i} {
+    margin-right: #{$i}px !important;
+  }
+  .mB-#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+  .mL-#{$i} {
+    margin-left: #{$i}px !important;
+  }
+
+  .mY-#{$i} {
+    margin-top: #{$i}px !important;
+    margin-bottom: #{$i}px !important;
+  }
+
+  .mX-#{$i} {
+    margin-left: #{$i}px !important;
+    margin-right: #{$i}px !important;
+  }
+
+  .m-nv-#{$i} {
+    margin: -#{$i}px !important;
+  }
+  .mT-nv-#{$i} {
+    margin-top: -#{$i}px !important;
+  }
+  .mR-nv-#{$i} {
+    margin-right: -#{$i}px !important;
+  }
+  .mB-nv-#{$i} {
+    margin-bottom: - #{$i}px !important;
+  }
+  .mL-nv-#{$i} {
+    margin-left: -#{$i}px !important;
+  }
+
+  .mY-nv-#{$i} {
+    margin-top: -#{$i}px !important;
+    margin-bottom: -#{$i}px !important;
+  }
+
+  .mX-nv-#{$i} {
+    margin-left: -#{$i}px !important;
+    margin-right: -#{$i}px !important;
+  }
+
+  @if ($responsive == true) {
+    @include generateResponsive() {
+      .m-#{$i}\@#{$breakpointAlias} {
         margin: #{$i}px !important;
-    }
-    .mT-#{$i} {
+      }
+      .mT-#{$i}\@#{$breakpointAlias} {
         margin-top: #{$i}px !important;
-    }
-    .mR-#{$i} {
+      }
+      .mR-#{$i}\@#{$breakpointAlias} {
         margin-right: #{$i}px !important;
-    }
-    .mB-#{$i} {
+      }
+      .mB-#{$i}\@#{$breakpointAlias} {
         margin-bottom: #{$i}px !important;
-    }
-    .mL-#{$i} {
+      }
+      .mL-#{$i}\@#{$breakpointAlias} {
         margin-left: #{$i}px !important;
-    }
+      }
 
-    .mY-#{$i} {
+      .mY-#{$i}\@#{$breakpointAlias} {
         margin-top: #{$i}px !important;
         margin-bottom: #{$i}px !important;
-    }
+      }
 
-    .mX-#{$i} {
+      .mX-#{$i}\@#{$breakpointAlias} {
         margin-left: #{$i}px !important;
         margin-right: #{$i}px !important;
-    }
+      }
 
-    .m-nv-#{$i} {
+      .m-nv-#{$i}\@#{$breakpointAlias} {
         margin: -#{$i}px !important;
-    }
-    .mT-nv-#{$i} {
+      }
+      .mT-nv-#{$i}\@#{$breakpointAlias} {
         margin-top: -#{$i}px !important;
-    }
-    .mR-nv-#{$i} {
+      }
+      .mR-nv-#{$i}\@#{$breakpointAlias} {
         margin-right: -#{$i}px !important;
-    }
-    .mB-nv-#{$i} {
-        margin-bottom: - #{$i}px !important;
-    }
-    .mL-nv-#{$i} {
+      }
+      .mB-nv-#{$i}\@#{$breakpointAlias} {
+        margin-bottom: -#{$i}px !important;
+      }
+      .mL-nv-#{$i}\@#{$breakpointAlias} {
         margin-left: -#{$i}px !important;
-    }
+      }
 
-    .mY-nv-#{$i} {
+      .mY-nv-#{$i}\@#{$breakpointAlias} {
         margin-top: -#{$i}px !important;
         margin-bottom: -#{$i}px !important;
-    }
+      }
 
-    .mX-nv-#{$i} {
+      .mX-nv-#{$i}\@#{$breakpointAlias} {
         margin-left: -#{$i}px !important;
         margin-right: -#{$i}px !important;
+      }
     }
-
-    @if ($responsive == true) {
-        @include generateResponsive() {
-            .m-#{$i}\@#{$breakpointAlias} {
-                margin: #{$i}px !important;
-            }
-            .mT-#{$i}\@#{$breakpointAlias} {
-                margin-top: #{$i}px !important;
-            }
-            .mR-#{$i}\@#{$breakpointAlias} {
-                margin-right: #{$i}px !important;
-            }
-            .mB-#{$i}\@#{$breakpointAlias} {
-                margin-bottom: #{$i}px !important;
-            }
-            .mL-#{$i}\@#{$breakpointAlias} {
-                margin-left: #{$i}px !important;
-            }
-
-            .mY-#{$i}\@#{$breakpointAlias} {
-                margin-top: #{$i}px !important;
-                margin-bottom: #{$i}px !important;
-            }
-
-            .mX-#{$i}\@#{$breakpointAlias} {
-                margin-left: #{$i}px !important;
-                margin-right: #{$i}px !important;
-            }
-
-            .m-nv-#{$i}\@#{$breakpointAlias} {
-                margin: -#{$i}px !important;
-            }
-            .mT-nv-#{$i}\@#{$breakpointAlias} {
-                margin-top: -#{$i}px !important;
-            }
-            .mR-nv-#{$i}\@#{$breakpointAlias} {
-                margin-right: -#{$i}px !important;
-            }
-            .mB-nv-#{$i}\@#{$breakpointAlias} {
-                margin-bottom: -#{$i}px !important;
-            }
-            .mL-nv-#{$i}\@#{$breakpointAlias} {
-                margin-left: -#{$i}px !important;
-            }
-
-            .mY-nv-#{$i}\@#{$breakpointAlias} {
-                margin-top: -#{$i}px !important;
-                margin-bottom: -#{$i}px !important;
-            }
-
-            .mX-nv-#{$i}\@#{$breakpointAlias} {
-                margin-left: -#{$i}px !important;
-                margin-right: -#{$i}px !important;
-            }
-        }
-    }
+  }
 }
 
 // ---------------------------------------------------------
@@ -133,115 +133,115 @@ $responsive: true;
 // ---------------------------------------------------------
 
 @for $i from 5 through 35 {
-    @if $i % 5 == 0 {
-        .m-#{$i} {
-            margin: #{$i}px !important;
-        }
-        .mT-#{$i} {
-            margin-top: #{$i}px !important;
-        }
-        .mR-#{$i} {
-            margin-right: #{$i}px !important;
-        }
-        .mB-#{$i} {
-            margin-bottom: #{$i}px !important;
-        }
-        .mL-#{$i} {
-            margin-left: #{$i}px !important;
-        }
-
-        .mY-#{$i} {
-            margin-top: #{$i}px !important;
-            margin-bottom: #{$i}px !important;
-        }
-
-        .mX-#{$i} {
-            margin-left: #{$i}px !important;
-            margin-right: #{$i}px !important;
-        }
-
-        .m-nv-#{$i} {
-            margin: -#{$i}px !important;
-        }
-        .mT-nv-#{$i} {
-            margin-top: -#{$i}px !important;
-        }
-        .mR-nv-#{$i} {
-            margin-right: -#{$i}px !important;
-        }
-        .mB-nv-#{$i} {
-            margin-bottom: -#{$i}px !important;
-        }
-        .mL-nv-#{$i} {
-            margin-left: -#{$i}px !important;
-        }
-
-        .mY-nv-#{$i} {
-            margin-top: -#{$i}px !important;
-            margin-bottom: -#{$i}px !important;
-        }
-
-        .mX-nv-#{$i} {
-            margin-left: -#{$i}px !important;
-            margin-right: -#{$i}px !important;
-        }
-
-        @if ($responsive == true) {
-            @include generateResponsive() {
-                .m-#{$i}\@#{$breakpointAlias} {
-                    margin: #{$i}px !important;
-                }
-                .mT-#{$i}\@#{$breakpointAlias} {
-                    margin-top: #{$i}px !important;
-                }
-                .mR-#{$i}\@#{$breakpointAlias} {
-                    margin-right: #{$i}px !important;
-                }
-                .mB-#{$i}\@#{$breakpointAlias} {
-                    margin-bottom: #{$i}px !important;
-                }
-                .mL-#{$i}\@#{$breakpointAlias} {
-                    margin-left: #{$i}px !important;
-                }
-
-                .mY-#{$i}\@#{$breakpointAlias} {
-                    margin-top: #{$i}px !important;
-                    margin-bottom: #{$i}px !important;
-                }
-
-                .mX-#{$i}\@#{$breakpointAlias} {
-                    margin-left: #{$i}px !important;
-                    margin-right: #{$i}px !important;
-                }
-
-                .m-nv-#{$i}\@#{$breakpointAlias} {
-                    margin: -#{$i}px !important;
-                }
-                .mT-nv-#{$i}\@#{$breakpointAlias} {
-                    margin-top: -#{$i}px !important;
-                }
-                .mR-nv-#{$i}\@#{$breakpointAlias} {
-                    margin-right: -#{$i}px !important;
-                }
-                .mB-nv-#{$i}\@#{$breakpointAlias} {
-                    margin-bottom: -#{$i}px !important;
-                }
-                .mL-nv-#{$i}\@#{$breakpointAlias} {
-                    margin-left: -#{$i}px !important;
-                }
-
-                .mY-nv-#{$i}\@#{$breakpointAlias} {
-                    margin-top: -#{$i}px !important;
-                    margin-bottom: -#{$i}px !important;
-                }
-
-                .mX-nv-#{$i}\@#{$breakpointAlias} {
-                    margin-left: -#{$i}px !important;
-                    margin-right: -#{$i}px !important;
-                }
-            }
-        }
+  @if $i % 5 == 0 {
+    .m-#{$i} {
+      margin: #{$i}px !important;
     }
+    .mT-#{$i} {
+      margin-top: #{$i}px !important;
+    }
+    .mR-#{$i} {
+      margin-right: #{$i}px !important;
+    }
+    .mB-#{$i} {
+      margin-bottom: #{$i}px !important;
+    }
+    .mL-#{$i} {
+      margin-left: #{$i}px !important;
+    }
+
+    .mY-#{$i} {
+      margin-top: #{$i}px !important;
+      margin-bottom: #{$i}px !important;
+    }
+
+    .mX-#{$i} {
+      margin-left: #{$i}px !important;
+      margin-right: #{$i}px !important;
+    }
+
+    .m-nv-#{$i} {
+      margin: -#{$i}px !important;
+    }
+    .mT-nv-#{$i} {
+      margin-top: -#{$i}px !important;
+    }
+    .mR-nv-#{$i} {
+      margin-right: -#{$i}px !important;
+    }
+    .mB-nv-#{$i} {
+      margin-bottom: -#{$i}px !important;
+    }
+    .mL-nv-#{$i} {
+      margin-left: -#{$i}px !important;
+    }
+
+    .mY-nv-#{$i} {
+      margin-top: -#{$i}px !important;
+      margin-bottom: -#{$i}px !important;
+    }
+
+    .mX-nv-#{$i} {
+      margin-left: -#{$i}px !important;
+      margin-right: -#{$i}px !important;
+    }
+
+    @if ($responsive == true) {
+      @include generateResponsive() {
+        .m-#{$i}\@#{$breakpointAlias} {
+          margin: #{$i}px !important;
+        }
+        .mT-#{$i}\@#{$breakpointAlias} {
+          margin-top: #{$i}px !important;
+        }
+        .mR-#{$i}\@#{$breakpointAlias} {
+          margin-right: #{$i}px !important;
+        }
+        .mB-#{$i}\@#{$breakpointAlias} {
+          margin-bottom: #{$i}px !important;
+        }
+        .mL-#{$i}\@#{$breakpointAlias} {
+          margin-left: #{$i}px !important;
+        }
+
+        .mY-#{$i}\@#{$breakpointAlias} {
+          margin-top: #{$i}px !important;
+          margin-bottom: #{$i}px !important;
+        }
+
+        .mX-#{$i}\@#{$breakpointAlias} {
+          margin-left: #{$i}px !important;
+          margin-right: #{$i}px !important;
+        }
+
+        .m-nv-#{$i}\@#{$breakpointAlias} {
+          margin: -#{$i}px !important;
+        }
+        .mT-nv-#{$i}\@#{$breakpointAlias} {
+          margin-top: -#{$i}px !important;
+        }
+        .mR-nv-#{$i}\@#{$breakpointAlias} {
+          margin-right: -#{$i}px !important;
+        }
+        .mB-nv-#{$i}\@#{$breakpointAlias} {
+          margin-bottom: -#{$i}px !important;
+        }
+        .mL-nv-#{$i}\@#{$breakpointAlias} {
+          margin-left: -#{$i}px !important;
+        }
+
+        .mY-nv-#{$i}\@#{$breakpointAlias} {
+          margin-top: -#{$i}px !important;
+          margin-bottom: -#{$i}px !important;
+        }
+
+        .mX-nv-#{$i}\@#{$breakpointAlias} {
+          margin-left: -#{$i}px !important;
+          margin-right: -#{$i}px !important;
+        }
+      }
+    }
+  }
 }
 
 // ---------------------------------------------------------
@@ -249,116 +249,116 @@ $responsive: true;
 // ---------------------------------------------------------
 
 @for $i from 40 through 160 {
-    @if $i % 10 == 0 {
+  @if $i % 10 == 0 {
 
-        .m-#{$i} {
-            margin: #{$i}px !important;
-        }
-        .mT-#{$i} {
-            margin-top: #{$i}px !important;
-        }
-        .mR-#{$i} {
-            margin-right: #{$i}px !important;
-        }
-        .mB-#{$i} {
-            margin-bottom: #{$i}px !important;
-        }
-        .mL-#{$i} {
-            margin-left: #{$i}px !important;
-        }
-
-        .mY-#{$i} {
-            margin-top: #{$i}px !important;
-            margin-bottom: #{$i}px !important;
-        }
-
-        .mX-#{$i} {
-            margin-left: #{$i}px !important;
-            margin-right: #{$i}px !important;
-        }
-
-        .m-nv-#{$i} {
-            margin: -#{$i}px !important;
-        }
-        .mT-nv-#{$i} {
-            margin-top: -#{$i}px !important;
-        }
-        .mR-nv-#{$i} {
-            margin-right: -#{$i}px !important;
-        }
-        .mB-nv-#{$i} {
-            margin-bottom: -#{$i}px !important;
-        }
-        .mL-nv-#{$i} {
-            margin-left: -#{$i}px !important;
-        }
-
-        .mY-nv-#{$i} {
-            margin-top: -#{$i}px !important;
-            margin-bottom: -#{$i}px !important;
-        }
-
-        .mX-nv-#{$i} {
-            margin-left: -#{$i}px !important;
-            margin-right: -#{$i}px !important;
-        }
-
-        @if ($responsive == true) {
-            @include generateResponsive() {
-                .m-#{$i}\@#{$breakpointAlias} {
-                    margin: #{$i}px !important;
-                }
-                .mT-#{$i}\@#{$breakpointAlias} {
-                    margin-top: #{$i}px !important;
-                }
-                .mR-#{$i}\@#{$breakpointAlias} {
-                    margin-right: #{$i}px !important;
-                }
-                .mB-#{$i}\@#{$breakpointAlias} {
-                    margin-bottom: #{$i}px !important;
-                }
-                .mL-#{$i}\@#{$breakpointAlias} {
-                    margin-left: #{$i}px !important;
-                }
-
-                .mY-#{$i}\@#{$breakpointAlias} {
-                    margin-top: #{$i}px !important;
-                    margin-bottom: #{$i}px !important;
-                }
-
-                .mX-#{$i}\@#{$breakpointAlias} {
-                    margin-left: #{$i}px !important;
-                    margin-right: #{$i}px !important;
-                }
-
-                .m-nv-#{$i}\@#{$breakpointAlias} {
-                    margin: -#{$i}px !important;
-                }
-                .mT-nv-#{$i}\@#{$breakpointAlias} {
-                    margin-top: -#{$i}px !important;
-                }
-                .mR-nv-#{$i}\@#{$breakpointAlias} {
-                    margin-right: -#{$i}px !important;
-                }
-                .mB-nv-#{$i}\@#{$breakpointAlias} {
-                    margin-bottom: -#{$i}px !important;
-                }
-                .mL-nv-#{$i}\@#{$breakpointAlias} {
-                    margin-left: -#{$i}px !important;
-                }
-
-                .mY-nv-#{$i}\@#{$breakpointAlias} {
-                    margin-top: -#{$i}px !important;
-                    margin-bottom: -#{$i}px !important;
-                }
-
-                .mX-nv-#{$i}\@#{$breakpointAlias} {
-                    margin-left: -#{$i}px !important;
-                    margin-right: -#{$i}px !important;
-                }
-            }
-        }
+    .m-#{$i} {
+      margin: #{$i}px !important;
     }
+    .mT-#{$i} {
+      margin-top: #{$i}px !important;
+    }
+    .mR-#{$i} {
+      margin-right: #{$i}px !important;
+    }
+    .mB-#{$i} {
+      margin-bottom: #{$i}px !important;
+    }
+    .mL-#{$i} {
+      margin-left: #{$i}px !important;
+    }
+
+    .mY-#{$i} {
+      margin-top: #{$i}px !important;
+      margin-bottom: #{$i}px !important;
+    }
+
+    .mX-#{$i} {
+      margin-left: #{$i}px !important;
+      margin-right: #{$i}px !important;
+    }
+
+    .m-nv-#{$i} {
+      margin: -#{$i}px !important;
+    }
+    .mT-nv-#{$i} {
+      margin-top: -#{$i}px !important;
+    }
+    .mR-nv-#{$i} {
+      margin-right: -#{$i}px !important;
+    }
+    .mB-nv-#{$i} {
+      margin-bottom: -#{$i}px !important;
+    }
+    .mL-nv-#{$i} {
+      margin-left: -#{$i}px !important;
+    }
+
+    .mY-nv-#{$i} {
+      margin-top: -#{$i}px !important;
+      margin-bottom: -#{$i}px !important;
+    }
+
+    .mX-nv-#{$i} {
+      margin-left: -#{$i}px !important;
+      margin-right: -#{$i}px !important;
+    }
+
+    @if ($responsive == true) {
+      @include generateResponsive() {
+        .m-#{$i}\@#{$breakpointAlias} {
+          margin: #{$i}px !important;
+        }
+        .mT-#{$i}\@#{$breakpointAlias} {
+          margin-top: #{$i}px !important;
+        }
+        .mR-#{$i}\@#{$breakpointAlias} {
+          margin-right: #{$i}px !important;
+        }
+        .mB-#{$i}\@#{$breakpointAlias} {
+          margin-bottom: #{$i}px !important;
+        }
+        .mL-#{$i}\@#{$breakpointAlias} {
+          margin-left: #{$i}px !important;
+        }
+
+        .mY-#{$i}\@#{$breakpointAlias} {
+          margin-top: #{$i}px !important;
+          margin-bottom: #{$i}px !important;
+        }
+
+        .mX-#{$i}\@#{$breakpointAlias} {
+          margin-left: #{$i}px !important;
+          margin-right: #{$i}px !important;
+        }
+
+        .m-nv-#{$i}\@#{$breakpointAlias} {
+          margin: -#{$i}px !important;
+        }
+        .mT-nv-#{$i}\@#{$breakpointAlias} {
+          margin-top: -#{$i}px !important;
+        }
+        .mR-nv-#{$i}\@#{$breakpointAlias} {
+          margin-right: -#{$i}px !important;
+        }
+        .mB-nv-#{$i}\@#{$breakpointAlias} {
+          margin-bottom: -#{$i}px !important;
+        }
+        .mL-nv-#{$i}\@#{$breakpointAlias} {
+          margin-left: -#{$i}px !important;
+        }
+
+        .mY-nv-#{$i}\@#{$breakpointAlias} {
+          margin-top: -#{$i}px !important;
+          margin-bottom: -#{$i}px !important;
+        }
+
+        .mX-nv-#{$i}\@#{$breakpointAlias} {
+          margin-left: -#{$i}px !important;
+          margin-right: -#{$i}px !important;
+        }
+      }
+    }
+  }
 }
 
 // ---------------------------------------------------------
@@ -366,50 +366,50 @@ $responsive: true;
 // ---------------------------------------------------------
 
 .m-a {
-    margin: auto !important;
+  margin: auto !important;
 }
 
 .mX-a {
-    margin-left: auto !important;
-    margin-right: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .mT-a {
-    margin-top: auto !important;
+  margin-top: auto !important;
 }
 
 .mR-a {
-    margin-right: auto !important;
+  margin-right: auto !important;
 }
 
 .mB-a {
-    margin-bottom: auto !important;
+  margin-bottom: auto !important;
 }
 
 .mL-a {
-    margin-left: auto !important;
+  margin-left: auto !important;
 }
 
 @if ($responsive == true) {
-    @include generateResponsive() {
-        .m-a\@#{$breakpointAlias} {
-            margin: auto !important;
-        }
-        .mX-a\@#{$breakpointAlias} {
-            margin-left: auto !important;
-            margin-right: auto !important;
-        }
-        .mT-a\@#{$breakpointAlias} {
-            margin-top: auto !important;
-        }
-        .mR-a\@#{$breakpointAlias} {
-            margin-right: auto !important;
-        }
-        .mB-a\@#{$breakpointAlias} {
-            margin-bottom: auto !important;
-        }
-        .mL-a\@#{$breakpointAlias} {
-            margin-left: auto !important;
-        }
+  @include generateResponsive() {
+    .m-a\@#{$breakpointAlias} {
+      margin: auto !important;
     }
+    .mX-a\@#{$breakpointAlias} {
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+    .mT-a\@#{$breakpointAlias} {
+      margin-top: auto !important;
+    }
+    .mR-a\@#{$breakpointAlias} {
+      margin-right: auto !important;
+    }
+    .mB-a\@#{$breakpointAlias} {
+      margin-bottom: auto !important;
+    }
+    .mL-a\@#{$breakpointAlias} {
+      margin-left: auto !important;
+    }
+  }
 }

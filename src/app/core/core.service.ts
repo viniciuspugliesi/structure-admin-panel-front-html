@@ -1,9 +1,8 @@
 import {Injectable} from '@angular/core';
-import {BehaviorSubject} from 'rxjs/BehaviorSubject';
 import {ActivationEnd, NavigationEnd, NavigationStart, Router} from '@angular/router';
-import {Observable} from 'rxjs/Observable';
 import PerfectScrollbar from 'perfect-scrollbar';
 import Masonry from 'masonry-layout';
+import {BehaviorSubject, Observable} from 'rxjs';
 
 declare let $: any;
 
@@ -21,7 +20,7 @@ export class CoreService {
                 this.reload();
 
                 let self = this;
-                setTimeout(function () {
+                setTimeout(function() {
                     self.setLoader(false);
                 }, 600);
             }
@@ -65,7 +64,7 @@ export class CoreService {
     }
 
     reloadInputs() {
-        $(document).on('change', '.form-group-label .form-control', function () {
+        $(document).on('change', '.form-group-label .form-control', function() {
             if ($(this).val() && !$(this).hasClass('has-value')) {
                 $(this).addClass('has-value');
             } else if (!$(this).val()) {
@@ -83,7 +82,7 @@ export class CoreService {
     }
 
     reloadInputPassword() {
-        $(document).on('click', '.input-password', function () {
+        $(document).on('click', '.input-password', function() {
             let i = $(this).find('i');
             let input = $(this).parent().parent().parent().find('input');
 

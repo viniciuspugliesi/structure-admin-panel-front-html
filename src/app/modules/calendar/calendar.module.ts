@@ -6,7 +6,7 @@ import {FormsModule} from '@angular/forms';
 import {SharedModule} from '../../shared/shared.module';
 import {routing} from './calendar-routing.module';
 import {EventsComponent} from './calendar/components/events/events.component';
-import { FullCalendarComponent } from './calendar/components/full-calendar/full-calendar.component';
+import {FullCalendarComponent} from './calendar/components/full-calendar/full-calendar.component';
 import {CalendarService} from './calendar/calendar.service';
 
 @NgModule({

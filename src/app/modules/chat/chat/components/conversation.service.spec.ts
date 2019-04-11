@@ -1,15 +1,15 @@
-import { TestBed, inject } from '@angular/core/testing';
+import {inject, TestBed} from '@angular/core/testing';
 
-import { ConversationService } from './conversation.service';
+import {ConversationService} from './conversation.service';
 
 describe('ConversationService', () => {
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      providers: [ConversationService]
+    beforeEach(() => {
+        TestBed.configureTestingModule({
+            providers: [ConversationService]
+        });
     });
-  });
 
-  it('should be created', inject([ConversationService], (service: ConversationService) => {
-    expect(service).toBeTruthy();
-  }));
+    it('should be created', inject([ConversationService], (service: ConversationService) => {
+        expect(service).toBeTruthy();
+    }));
 });

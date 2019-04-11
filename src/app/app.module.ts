@@ -1,25 +1,18 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+
+import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
+import {GoogleMapsComponent} from './modules/google-maps/google-maps.component';
+import {FormsComponent} from './modules/forms/forms.component';
+import {UiElementsComponent} from './modules/ui-elements/ui-elements.component';
+import {PageBlankComponent} from './modules/page-blank/page-blank.component';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import {AppRoutingModule} from './app-routing.module';
 import {SharedModule} from './shared/shared.module';
 import {CoreModule} from './core/core.module';
-import {PageBlankComponent} from './modules/page-blank/page-blank.component';
-import {UiElementsComponent} from './modules/ui-elements/ui-elements.component';
-import {FormsComponent} from './modules/forms/forms.component';
-import {GoogleMapsComponent} from './modules/google-maps/google-maps.component';
 
 @NgModule({
-    imports: [
-        FormsModule,
-        BrowserModule,
-        HttpClientModule,
-        AppRoutingModule,
-        SharedModule,
-        CoreModule,
-    ],
     declarations: [
         AppComponent,
         PageBlankComponent,
@@ -27,10 +20,17 @@ import {GoogleMapsComponent} from './modules/google-maps/google-maps.component';
         FormsComponent,
         GoogleMapsComponent,
     ],
+    imports: [
+        FormsModule,
+        BrowserModule,
+        HttpClientModule,
+        AppRoutingModule,
+        SharedModule,
+        CoreModule,
+        AppRoutingModule
+    ],
     providers: [],
-    bootstrap: [
-        AppComponent
-    ]
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }

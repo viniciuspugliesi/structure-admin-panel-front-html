@@ -3,7 +3,8 @@
         <app-contact-list (onChangeConversation)="onChangeConversation($event)"></app-contact-list>
 
         <div class="peer peer-greed" id='chat-box'>
-            <app-conversation *ngIf="contact" [contact]="contact" (onCloseConversation)="onChangeConversation($event)"></app-conversation>
+            <app-conversation (onCloseConversation)="onChangeConversation($event)" *ngIf="contact"
+                              [contact]="contact"></app-conversation>
             <app-clean-conversation *ngIf="!contact"></app-clean-conversation>
         </div>
     </div>

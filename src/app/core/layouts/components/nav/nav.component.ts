@@ -21,11 +21,11 @@ export class NavComponent implements OnInit {
     }
 
     sidebarLinks() {
-        $(document).on('click', '.sidebar .sidebar-menu li a', function () {
+        $(document).on('click', '.sidebar .sidebar-menu li a', function() {
             let parent = $(this).parent();
 
             if (parent.hasClass('open')) {
-                parent.children('.dropdown-menu').slideUp(200, function () {
+                parent.children('.dropdown-menu').slideUp(200, function() {
                     parent.removeClass('open');
                 });
             } else {

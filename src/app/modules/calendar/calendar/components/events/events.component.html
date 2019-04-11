@@ -5,8 +5,9 @@
     </div>
 
     <div class="pos-r">
-        <button class="mT-nv-50 pos-a r-10 t-2 btn cur-p bdrs-50p p-0 w-3r h-3r btn-warning" data-toggle="modal"
-                data-target="#modal-calendar-edit">
+        <button class="mT-nv-50 pos-a r-10 t-2 btn cur-p bdrs-50p p-0 w-3r h-3r btn-warning"
+                data-target="#modal-calendar-edit"
+                data-toggle="modal">
             <i class="fa fa-plus"></i>
         </button>
 
@@ -33,14 +34,16 @@
 
                 <div class="peers mR-15">
                     <div class="peer">
-                        <a href="" prevent-default class="td-n c-deep-purple-500 cH-blue-500 fsz-md p-5" data-toggle="modal"
-                           data-target="#modal-calendar-edit">
+                        <a class="td-n c-deep-purple-500 cH-blue-500 fsz-md p-5" data-target="#modal-calendar-edit"
+                           data-toggle="modal" href=""
+                           prevent-default>
                             <i class="fa fa-pencil-alt"></i>
                         </a>
                     </div>
 
                     <div class="peer">
-                        <a href="" prevent-default class="td-n c-red-500 cH-blue-500 fsz-md p-5" (click)="deleteEvent(event)">
+                        <a (click)="deleteEvent(event)" class="td-n c-red-500 cH-blue-500 fsz-md p-5" href=""
+                           prevent-default>
                             <i class="fa fa-trash-alt"></i>
                         </a>
                     </div>

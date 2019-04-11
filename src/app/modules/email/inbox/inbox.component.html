@@ -3,7 +3,7 @@
         <div class="email-side-nav remain-height ov-h">
             <div class="h-100 layers">
                 <div class="p-20 bgc-grey-100 layer w-100">
-                    <a routerLink="/emails/compose" class="btn btn-danger btn-block">New Message</a>
+                    <a class="btn btn-danger btn-block" routerLink="/emails/compose">New Message</a>
                 </div>
 
                 <div class="scrollable pos-r bdT layer w-100 fxg-1">
@@ -18,45 +18,45 @@
                     <div class="bgc-grey-100 peers ai-c jc-sb p-20 fxw-nw">
                         <div class="peer">
                             <div class="btn-group" role="group">
-                                <button type="button" class="email-side-toggle d-n@md+ btn bgc-white bdrs-2 mR-3 cur-p">
+                                <button class="email-side-toggle d-n@md+ btn bgc-white bdrs-2 mR-3 cur-p" type="button">
                                     <i class="fa fa-bars"></i>
                                 </button>
 
-                                <button type="button" class="btn bgc-white bdrs-2 mR-3 cur-p">
+                                <button class="btn bgc-white bdrs-2 mR-3 cur-p" type="button">
                                     <i class="fa fa-folder"></i>
                                 </button>
 
-                                <button type="button" class="btn bgc-white bdrs-2 mR-3 cur-p">
+                                <button class="btn bgc-white bdrs-2 mR-3 cur-p" type="button">
                                     <i class="fa fa-tag"></i>
                                 </button>
 
                                 <div class="btn-group" role="group">
-                                    <button id="btnGroupDrop1" type="button"
+                                    <button aria-expanded="false" aria-haspopup="true"
                                             class="btn cur-p bgc-white no-after dropdown-toggle" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
+                                            id="btnGroupDrop1" type="button">
                                         <i class="fa fa-ellipsis-h fa-lg"></i>
                                     </button>
 
-                                    <ul class="dropdown-menu fsz-sm" aria-labelledby="btnGroupDrop1">
+                                    <ul aria-labelledby="btnGroupDrop1" class="dropdown-menu fsz-sm">
                                         <li>
-                                            <a href="" prevent-default
-                                               class="d-b td-n pY-5 pX-10 bgcH-grey-100 c-grey-700">
+                                            <a class="d-b td-n pY-5 pX-10 bgcH-grey-100 c-grey-700" href=""
+                                               prevent-default>
                                                 <i class="fa fa-trash mR-10"></i>
                                                 <span>Delete</span>
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="" prevent-default
-                                               class="d-b td-n pY-5 pX-10 bgcH-grey-100 c-grey-700">
+                                            <a class="d-b td-n pY-5 pX-10 bgcH-grey-100 c-grey-700" href=""
+                                               prevent-default>
                                                 <i class="fa fa-warning mR-10"></i>
                                                 <span>Mark as Spam</span>
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="" prevent-default
-                                               class="d-b td-n pY-5 pX-10 bgcH-grey-100 c-grey-700">
+                                            <a class="d-b td-n pY-5 pX-10 bgcH-grey-100 c-grey-700" href=""
+                                               prevent-default>
                                                 <i class="fa fa-star mR-10"></i>
                                                 <span>Star</span>
                                             </a>
@@ -68,11 +68,11 @@
 
                         <div class="peer">
                             <div class="btn-group" role="group">
-                                <button type="button" class="fsz-xs btn bgc-white bdrs-2 mR-3 cur-p">
+                                <button class="fsz-xs btn bgc-white bdrs-2 mR-3 cur-p" type="button">
                                     <i class="fa fa-angle-left fa-2x"></i>
                                 </button>
 
-                                <button type="button" class="fsz-xs btn bgc-white bdrs-2 mR-3 cur-p">
+                                <button class="fsz-xs btn bgc-white bdrs-2 mR-3 cur-p" type="button">
                                     <i class="fa fa-angle-right fa-2x"></i>
                                 </button>
                             </div>
@@ -82,18 +82,18 @@
 
                 <div class="layer w-100">
                     <div class="bdT bdB">
-                        <input type="text" class="form-control m-0 bdw-0 pY-25 pX-20" placeholder="Search...">
+                        <input class="form-control m-0 bdw-0 pY-25 pX-20" placeholder="Search..." type="text">
                     </div>
                 </div>
 
                 <div class="layer w-100 fxg-1 scrollable pos-r">
-                    <label for="email-inbox-1" class="w-100">
+                    <label class="w-100" for="email-inbox-1">
                         <div class="email-list-item peers fxw-nw p-20 bdB bgcH-grey-100 cur-p">
 
                             <div class="peer mR-10">
                                 <div class="checkbox checkbox-circle checkbox-info peers ai-c">
-                                    <input type="checkbox" id="email-inbox-1" name="inputCheckboxesCall" class="peer">
-                                    <label for="email-inbox-1" class="peers peer-greed js-sb ai-c"></label>
+                                    <input class="peer" id="email-inbox-1" name="inputCheckboxesCall" type="checkbox">
+                                    <label class="peers peer-greed js-sb ai-c" for="email-inbox-1"></label>
                                 </div>
                             </div>
 
@@ -119,42 +119,45 @@
                     <div class="bgc-grey-100 peers ai-c jc-sb p-20 fxw-nw d-n@md+">
                         <div class="peer">
                             <div class="btn-group" role="group">
-                                <button type="button" class="back-to-mailbox btn bgc-white bdrs-2 mR-3 cur-p">
+                                <button class="back-to-mailbox btn bgc-white bdrs-2 mR-3 cur-p" type="button">
                                     <i class="fa fa-angle-left"></i>
                                 </button>
 
-                                <button type="button" class="btn bgc-white bdrs-2 mR-3 cur-p">
+                                <button class="btn bgc-white bdrs-2 mR-3 cur-p" type="button">
                                     <i class="fa fa-folder"></i>
                                 </button>
 
-                                <button type="button" class="btn bgc-white bdrs-2 mR-3 cur-p">
+                                <button class="btn bgc-white bdrs-2 mR-3 cur-p" type="button">
                                     <i class="fa fa-tag"></i>
                                 </button>
 
                                 <div class="btn-group" role="group">
-                                    <button id="btnGroupDrop1" type="button"
+                                    <button aria-expanded="false" aria-haspopup="true"
                                             class="btn cur-p bgc-white no-after dropdown-toggle" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
+                                            id="btnGroupDrop1" type="button">
                                         <i class="ti-more-alt"></i>
                                     </button>
 
-                                    <ul class="dropdown-menu fsz-sm" aria-labelledby="btnGroupDrop1">
+                                    <ul aria-labelledby="btnGroupDrop1" class="dropdown-menu fsz-sm">
                                         <li>
-                                            <a href="" prevent-default class="d-b td-n pY-5 pX-10 bgcH-grey-100 c-grey-700">
+                                            <a class="d-b td-n pY-5 pX-10 bgcH-grey-100 c-grey-700" href=""
+                                               prevent-default>
                                                 <i class="fa fa-trash mR-10"></i>
                                                 <span>Delete</span>
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="" prevent-default class="d-b td-n pY-5 pX-10 bgcH-grey-100 c-grey-700">
+                                            <a class="d-b td-n pY-5 pX-10 bgcH-grey-100 c-grey-700" href=""
+                                               prevent-default>
                                                 <i class="fa fa-warning mR-10"></i>
                                                 <span>Mark as Spam</span>
                                             </a>
                                         </li>
 
                                         <li>
-                                            <a href="" prevent-default class="d-b td-n pY-5 pX-10 bgcH-grey-100 c-grey-700">
+                                            <a class="d-b td-n pY-5 pX-10 bgcH-grey-100 c-grey-700" href=""
+                                               prevent-default>
                                                 <i class="fa fa-star mR-10"></i>
                                                 <span>Star</span>
                                             </a>
@@ -166,11 +169,11 @@
 
                         <div class="peer">
                             <div class="btn-group" role="group">
-                                <button type="button" class="fsz-xs btn bgc-white bdrs-2 mR-3 cur-p">
+                                <button class="fsz-xs btn bgc-white bdrs-2 mR-3 cur-p" type="button">
                                     <i class="ti-angle-left"></i>
                                 </button>
 
-                                <button type="button" class="fsz-xs btn bgc-white bdrs-2 mR-3 cur-p">
+                                <button class="fsz-xs btn bgc-white bdrs-2 mR-3 cur-p" type="button">
                                     <i class="ti-angle-right"></i>
                                 </button>
                             </div>
@@ -182,7 +185,7 @@
                         <div class="peers ai-c jc-sb pX-40 pY-30">
                             <div class="peers peer-greed">
                                 <div class="peer mR-20">
-                                    <img class="bdrs-50p w-3r h-3r" alt=""
+                                    <img alt="" class="bdrs-50p w-3r h-3r"
                                          src="https://randomuser.me/api/portraits/men/11.jpg">
                                 </div>
 
@@ -194,7 +197,7 @@
                             </div>
 
                             <div class="peer">
-                                <a href="" prevent-default class="btn btn-danger bdrs-50p p-15 lh-0">
+                                <a class="btn btn-danger bdrs-50p p-15 lh-0" href="" prevent-default>
                                     <i class="fa fa-reply"></i>
                                 </a>
                             </div>

@@ -28,7 +28,7 @@ export class DataTableComponent implements OnInit {
 
     initDatatable() {
         setTimeout(() => {
-            $("#datatable").DataTable();
+            $('#datatable').DataTable();
         }, 500);
     }
 }

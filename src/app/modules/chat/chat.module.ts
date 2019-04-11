@@ -7,8 +7,8 @@ import {routing} from './chat-routing.module';
 import {ContactListService} from './chat/components/contact-list/contact-list.service';
 import {ChatComponent} from './chat/chat.component';
 import {ContactListComponent} from './chat/components/contact-list/contact-list.component';
-import { ConversationComponent } from './chat/components/conversation/conversation.component';
-import { CleanConversationComponent } from './chat/components/clean-conversation/clean-conversation.component';
+import {ConversationComponent} from './chat/components/conversation/conversation.component';
+import {CleanConversationComponent} from './chat/components/clean-conversation/clean-conversation.component';
 import {ConversationService} from './chat/components/conversation/conversation.service';
 import {CoreService} from '../../core/core.service';
 
