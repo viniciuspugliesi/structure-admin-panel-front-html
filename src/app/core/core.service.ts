@@ -64,7 +64,7 @@ export class CoreService {
     }
 
     reloadInputs() {
-        $(document).on('change', '.form-group-label .form-control', function() {
+        $('.form-group-label .form-control').change(function() {
             if ($(this).val() && !$(this).hasClass('has-value')) {
                 $(this).addClass('has-value');
             } else if (!$(this).val()) {
@@ -82,7 +82,7 @@ export class CoreService {
     }
 
     reloadInputPassword() {
-        $(document).on('click', '.input-password', function() {
+        $('.input-password').click(function() {
             let i = $(this).find('i');
             let input = $(this).parent().parent().parent().find('input');
 
@@ -112,11 +112,5 @@ export class CoreService {
 
     reloadDatepicker() {
         $('.datepicker').datepicker();
-    }
-
-    scrollTo(element: string) {
-        $('html, body').animate({
-            scrollTop: $(element).offset().top
-        }, 'slow');
     }
 }
