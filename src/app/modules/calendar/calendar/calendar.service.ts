@@ -10,6 +10,6 @@ export class CalendarService {
     }
 
     getEvents(): Observable<Array<Event>> {
-        return this.http.get<Array<Event>>('http://www.json-generator.com/api/json/get/bPSmpejTAO?indent=2');
+        return this.http.get<Array<Event>>('http://www.json-generator.com/api/json/get/cjUocmklqq?indent=2');
     }
 }

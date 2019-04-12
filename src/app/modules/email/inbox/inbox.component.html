@@ -18,22 +18,22 @@
                     <div class="bgc-grey-100 peers ai-c jc-sb p-20 fxw-nw">
                         <div class="peer">
                             <div class="btn-group" role="group">
-                                <button class="email-side-toggle d-n@md+ btn bgc-white bdrs-2 mR-3 cur-p" type="button">
+                                <a href="" prevent-default (click)="toggleEmailSidebar()" class="email-side-toggle d-n@md+ btn bgc-white bdrs-2 mR-3 cur-p">
                                     <i class="fa fa-bars"></i>
-                                </button>
+                                </a>
 
-                                <button class="btn bgc-white bdrs-2 mR-3 cur-p" type="button">
+                                <button class="btn bgc-white bdrs-2 mR-3 cur-p">
                                     <i class="fa fa-folder"></i>
                                 </button>
 
-                                <button class="btn bgc-white bdrs-2 mR-3 cur-p" type="button">
+                                <button class="btn bgc-white bdrs-2 mR-3 cur-p">
                                     <i class="fa fa-tag"></i>
                                 </button>
 
                                 <div class="btn-group" role="group">
                                     <button aria-expanded="false" aria-haspopup="true"
                                             class="btn cur-p bgc-white no-after dropdown-toggle" data-toggle="dropdown"
-                                            id="btnGroupDrop1" type="button">
+                                            id="btnGroupDrop1">
                                         <i class="fa fa-ellipsis-h fa-lg"></i>
                                     </button>
 
@@ -41,7 +41,7 @@
                                         <li>
                                             <a class="d-b td-n pY-5 pX-10 bgcH-grey-100 c-grey-700" href=""
                                                prevent-default>
-                                                <i class="fa fa-trash mR-10"></i>
+                                                <i class="fa fa-trash-alt mR-10"></i>
                                                 <span>Delete</span>
                                             </a>
                                         </li>
@@ -49,7 +49,7 @@
                                         <li>
                                             <a class="d-b td-n pY-5 pX-10 bgcH-grey-100 c-grey-700" href=""
                                                prevent-default>
-                                                <i class="fa fa-warning mR-10"></i>
+                                                <i class="fas fa-exclamation-triangle mR-10"></i>
                                                 <span>Mark as Spam</span>
                                             </a>
                                         </li>
@@ -68,12 +68,12 @@
 
                         <div class="peer">
                             <div class="btn-group" role="group">
-                                <button class="fsz-xs btn bgc-white bdrs-2 mR-3 cur-p" type="button">
-                                    <i class="fa fa-angle-left fa-2x"></i>
+                                <button class="fsz-xs btn bgc-white bdrs-2 mR-3 cur-p">
+                                    <i class="fa fa-angle-left fa-lg"></i>
                                 </button>
 
-                                <button class="fsz-xs btn bgc-white bdrs-2 mR-3 cur-p" type="button">
-                                    <i class="fa fa-angle-right fa-2x"></i>
+                                <button class="fsz-xs btn bgc-white bdrs-2 mR-3 cur-p">
+                                    <i class="fa fa-angle-right fa-lg"></i>
                                 </button>
                             </div>
                         </div>
@@ -92,7 +92,7 @@
 
                             <div class="peer mR-10">
                                 <div class="checkbox checkbox-circle checkbox-info peers ai-c">
-                                    <input class="peer" id="email-inbox-1" name="inputCheckboxesCall" type="checkbox">
+                                    <input type="checkbox" class="peer" (change)="toggleMessage()" id="email-inbox-1">
                                     <label class="peers peer-greed js-sb ai-c" for="email-inbox-1"></label>
                                 </div>
                             </div>
@@ -106,8 +106,12 @@
                                         <small>1 min ago</small>
                                     </div>
                                 </div>
+
                                 <h5 class="fsz-def tt-c c-grey-900">title goes here</h5>
-                                <span class="whs-nw w-100 ov-h tov-e d-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</span>
+
+                                <span class="whs-nw w-100 ov-h tov-e d-b">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                </span>
                             </div>
                         </div>
                     </label>
@@ -119,23 +123,23 @@
                     <div class="bgc-grey-100 peers ai-c jc-sb p-20 fxw-nw d-n@md+">
                         <div class="peer">
                             <div class="btn-group" role="group">
-                                <button class="back-to-mailbox btn bgc-white bdrs-2 mR-3 cur-p" type="button">
+                                <button (click)="toggleMessage()" class="back-to-mailbox btn bgc-white bdrs-2 mR-3 cur-p">
                                     <i class="fa fa-angle-left"></i>
                                 </button>
 
-                                <button class="btn bgc-white bdrs-2 mR-3 cur-p" type="button">
+                                <button class="btn bgc-white bdrs-2 mR-3 cur-p">
                                     <i class="fa fa-folder"></i>
                                 </button>
 
-                                <button class="btn bgc-white bdrs-2 mR-3 cur-p" type="button">
+                                <button class="btn bgc-white bdrs-2 mR-3 cur-p">
                                     <i class="fa fa-tag"></i>
                                 </button>
 
                                 <div class="btn-group" role="group">
                                     <button aria-expanded="false" aria-haspopup="true"
                                             class="btn cur-p bgc-white no-after dropdown-toggle" data-toggle="dropdown"
-                                            id="btnGroupDrop1" type="button">
-                                        <i class="ti-more-alt"></i>
+                                            id="btnGroupDrop1">
+                                        <i class="fa fa-ellipsis-h fa-lg"></i>
                                     </button>
 
                                     <ul aria-labelledby="btnGroupDrop1" class="dropdown-menu fsz-sm">
@@ -150,7 +154,7 @@
                                         <li>
                                             <a class="d-b td-n pY-5 pX-10 bgcH-grey-100 c-grey-700" href=""
                                                prevent-default>
-                                                <i class="fa fa-warning mR-10"></i>
+                                                <i class="fa fa-exclamation-triangle mR-10"></i>
                                                 <span>Mark as Spam</span>
                                             </a>
                                         </li>
@@ -169,12 +173,12 @@
 
                         <div class="peer">
                             <div class="btn-group" role="group">
-                                <button class="fsz-xs btn bgc-white bdrs-2 mR-3 cur-p" type="button">
-                                    <i class="ti-angle-left"></i>
+                                <button class="fsz-xs btn bgc-white bdrs-2 mR-3 cur-p">
+                                    <i class="fa fa-angle-left"></i>
                                 </button>
 
-                                <button class="fsz-xs btn bgc-white bdrs-2 mR-3 cur-p" type="button">
-                                    <i class="ti-angle-right"></i>
+                                <button class="fsz-xs btn bgc-white bdrs-2 mR-3 cur-p">
+                                    <i class="fa fa-angle-right"></i>
                                 </button>
                             </div>
                         </div>

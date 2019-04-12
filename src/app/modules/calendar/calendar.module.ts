@@ -24,7 +24,7 @@ import {CalendarService} from './calendar/calendar.service';
     ],
     providers: [
         CalendarService
-    ]
+    ],
 })
 export class CalendarModule {
 }

@@ -26,29 +26,29 @@ $responsive: true;
 // ---------------------------------------------------------
 
 .ta-c {
-  text-align: center !important;
+    text-align: center !important;
 }
 
 .ta-l {
-  text-align: left !important;
+    text-align: left !important;
 }
 
 .ta-r {
-  text-align: right !important;
+    text-align: right !important;
 }
 
 @if ($responsive == true) {
-  @include generateResponsive() {
-    .ta-c\@#{$breakpointAlias} {
-      text-align: center !important;
+    @include generateResponsive() {
+        .ta-c\@#{$breakpointAlias} {
+            text-align: center !important;
+        }
+        .ta-l\@#{$breakpointAlias} {
+            text-align: left !important;
+        }
+        .ta-r\@#{$breakpointAlias} {
+            text-align: right !important;
+        }
     }
-    .ta-l\@#{$breakpointAlias} {
-      text-align: left !important;
-    }
-    .ta-r\@#{$breakpointAlias} {
-      text-align: right !important;
-    }
-  }
 }
 
 // ---------------------------------------------------------
@@ -56,19 +56,19 @@ $responsive: true;
 // ---------------------------------------------------------
 
 .tt-n {
-  text-transform: none !important;
+    text-transform: none !important;
 }
 
 .tt-u {
-  text-transform: uppercase !important;
+    text-transform: uppercase !important;
 }
 
 .tt-l {
-  text-transform: lowercase !important;
+    text-transform: lowercase !important;
 }
 
 .tt-c {
-  text-transform: capitalize !important;
+    text-transform: capitalize !important;
 }
 
 // ---------------------------------------------------------
@@ -76,11 +76,11 @@ $responsive: true;
 // ---------------------------------------------------------
 
 .fs-i {
-  font-style: italic !important;
+    font-style: italic !important;
 }
 
 .fs-o {
-  font-style: oblique !important;
+    font-style: oblique !important;
 }
 
 // ---------------------------------------------------------
@@ -88,19 +88,19 @@ $responsive: true;
 // ---------------------------------------------------------
 
 .td-n {
-  text-decoration: none !important;
+    text-decoration: none !important;
 }
 
 .td-o {
-  text-decoration: overline !important;
+    text-decoration: overline !important;
 }
 
 .td-lt {
-  text-decoration: line-through !important;
+    text-decoration: line-through !important;
 }
 
 .td-u {
-  text-decoration: underline !important;
+    text-decoration: underline !important;
 }
 
 // ---------------------------------------------------------
@@ -108,15 +108,15 @@ $responsive: true;
 // ---------------------------------------------------------
 
 .whs-nw {
-  white-space: nowrap !important;
+    white-space: nowrap !important;
 }
 
 .whs-p {
-  white-space: pre !important;
+    white-space: pre !important;
 }
 
 .whs-n {
-  white-space: normal !important;
+    white-space: normal !important;
 }
 
 // ---------------------------------------------------------
@@ -124,15 +124,15 @@ $responsive: true;
 // ---------------------------------------------------------
 
 .wob-n {
-  word-break: normal !important;
+    word-break: normal !important;
 }
 
 .wob-ba {
-  word-break: break-all !important;
+    word-break: break-all !important;
 }
 
 .wob-k {
-  word-break: keep-all !important;
+    word-break: keep-all !important;
 }
 
 // ---------------------------------------------------------
@@ -140,11 +140,11 @@ $responsive: true;
 // ---------------------------------------------------------
 
 .wow-bw {
-  word-wrap: break-word !important;
+    word-wrap: break-word !important;
 }
 
 .wow-n {
-  word-wrap: normal !important;
+    word-wrap: normal !important;
 }
 
 // ---------------------------------------------------------
@@ -152,7 +152,7 @@ $responsive: true;
 // ---------------------------------------------------------
 
 .tov-e {
-  text-overflow: ellipsis !important;
+    text-overflow: ellipsis !important;
 }
 
 // ---------------------------------------------------------
@@ -160,27 +160,27 @@ $responsive: true;
 // ---------------------------------------------------------
 
 .fsz-xs {
-  font-size: 0.75rem !important;
+    font-size: 0.75rem !important;
 }
 
 .fsz-sm {
-  font-size: 0.87rem !important;
+    font-size: 0.87rem !important;
 }
 
 .fsz-def {
-  font-size: 1rem !important;
+    font-size: 1rem !important;
 }
 
 .fsz-md {
-  font-size: 1.15rem !important;
+    font-size: 1.15rem !important;
 }
 
 .fsz-lg {
-  font-size: 1.4rem !important;
+    font-size: 1.4rem !important;
 }
 
 .fsz-xl {
-  font-size: 1.7rem !important;
+    font-size: 1.7rem !important;
 }
 
 // ---------------------------------------------------------
@@ -188,39 +188,39 @@ $responsive: true;
 // ---------------------------------------------------------
 
 .fw-100 {
-  font-weight: 100 !important;
+    font-weight: 100 !important;
 }
 
 .fw-200 {
-  font-weight: 200 !important;
+    font-weight: 200 !important;
 }
 
 .fw-300 {
-  font-weight: 300 !important;
+    font-weight: 300 !important;
 }
 
 .fw-400 {
-  font-weight: 400 !important;
+    font-weight: 400 !important;
 }
 
 .fw-500 {
-  font-weight: 500 !important;
+    font-weight: 500 !important;
 }
 
 .fw-600 {
-  font-weight: 600 !important;
+    font-weight: 600 !important;
 }
 
 .fw-700 {
-  font-weight: 700 !important;
+    font-weight: 700 !important;
 }
 
 .fw-800 {
-  font-weight: 800 !important;
+    font-weight: 800 !important;
 }
 
 .fw-900 {
-  font-weight: 900 !important;
+    font-weight: 900 !important;
 }
 
 // ---------------------------------------------------------
@@ -228,13 +228,13 @@ $responsive: true;
 // ---------------------------------------------------------
 
 .lh-0 {
-  line-height: 0 !important;
+    line-height: 0 !important;
 }
 
 .lh-1 {
-  line-height: 1 !important;
+    line-height: 1 !important;
 }
 
 .lh-3\/2 {
-  line-height: 1.5 !important;
+    line-height: 1.5 !important;
 }

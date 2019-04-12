@@ -1,14 +1,14 @@
 .calendar {
 
-  .events {
+    .events {
 
-    .events-list {
-      transition: all 0.5s;
+        .events-list {
+            transition: all 0.5s;
 
-      &:hover {
-        transition: all 0.5s;
-        background: #e5f4fd;
-      }
+            &:hover {
+                transition: all 0.5s;
+                background: #e5f4fd;
+            }
+        }
     }
-  }
 }

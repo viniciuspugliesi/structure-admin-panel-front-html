@@ -12,23 +12,23 @@
 // ---------------------------------------------------------
 
 .bd {
-  border: #{$border-width} solid #{$border-color} !important;
+    border: #{$border-width} solid #{$border-color} !important;
 }
 
 .bdT {
-  border-top: #{$border-width} solid #{$border-color} !important;
+    border-top: #{$border-width} solid #{$border-color} !important;
 }
 
 .bdR {
-  border-right: #{$border-width} solid #{$border-color} !important;
+    border-right: #{$border-width} solid #{$border-color} !important;
 }
 
 .bdB {
-  border-bottom: #{$border-width} solid #{$border-color} !important;
+    border-bottom: #{$border-width} solid #{$border-color} !important;
 }
 
 .bdL {
-  border-left: #{$border-width} solid #{$border-color} !important;
+    border-left: #{$border-width} solid #{$border-color} !important;
 }
 
 // ---------------------------------------------------------
@@ -36,21 +36,21 @@
 // ---------------------------------------------------------
 
 @for $i from 0 through 5 {
-  .bdw-#{$i} {
-    border-width: #{$i}px !important;
-  }
-  .bdwT-#{$i} {
-    border-top-width: #{$i}px !important;
-  }
-  .bdwR-#{$i} {
-    border-right-width: #{$i}px !important;
-  }
-  .bdwB-#{$i} {
-    border-bottom-width: #{$i}px !important;
-  }
-  .bdwL-#{$i} {
-    border-left-width: #{$i}px !important;
-  }
+    .bdw-#{$i} {
+        border-width: #{$i}px !important;
+    }
+    .bdwT-#{$i} {
+        border-top-width: #{$i}px !important;
+    }
+    .bdwR-#{$i} {
+        border-right-width: #{$i}px !important;
+    }
+    .bdwB-#{$i} {
+        border-bottom-width: #{$i}px !important;
+    }
+    .bdwL-#{$i} {
+        border-left-width: #{$i}px !important;
+    }
 }
 
 // ---------------------------------------------------------
@@ -58,37 +58,37 @@
 // ---------------------------------------------------------
 
 @for $i from 0 to 5 {
-  .bdrs-#{$i} {
-    border-radius: #{$i}px !important;
-  }
+    .bdrs-#{$i} {
+        border-radius: #{$i}px !important;
+    }
 
-  .bdrsT-#{$i} {
-    border-top-left-radius: #{$i}px !important;
-    border-top-right-radius: #{$i}px !important;
-  }
+    .bdrsT-#{$i} {
+        border-top-left-radius: #{$i}px !important;
+        border-top-right-radius: #{$i}px !important;
+    }
 
-  .bdrsR-#{$i} {
-    border-top-right-radius: #{$i}px !important;
-    border-bottom-right-radius: #{$i}px !important;
-  }
+    .bdrsR-#{$i} {
+        border-top-right-radius: #{$i}px !important;
+        border-bottom-right-radius: #{$i}px !important;
+    }
 
-  .bdrsB-#{$i} {
-    border-bottom-left-radius: #{$i}px !important;
-    border-bottom-right-radius: #{$i}px !important;
-  }
+    .bdrsB-#{$i} {
+        border-bottom-left-radius: #{$i}px !important;
+        border-bottom-right-radius: #{$i}px !important;
+    }
 
-  .bdrsL-#{$i} {
-    border-top-left-radius: #{$i}px !important;
-    border-bottom-left-radius: #{$i}px !important;
-  }
+    .bdrsL-#{$i} {
+        border-top-left-radius: #{$i}px !important;
+        border-bottom-left-radius: #{$i}px !important;
+    }
 }
 
 .bdrs-50p {
-  border-radius: 50% !important;
+    border-radius: 50% !important;
 }
 
 .bdrs-10em {
-  border-radius: 10em !important;
+    border-radius: 10em !important;
 }
 
 // ---------------------------------------------------------
@@ -96,37 +96,37 @@
 // ---------------------------------------------------------
 
 .bds-n {
-  border-style: none !important;
+    border-style: none !important;
 }
 
 .bds-s {
-  border-style: solid !important;
+    border-style: solid !important;
 }
 
 .bds-dt {
-  border-style: dotted !important;
+    border-style: dotted !important;
 }
 
 .bds-ds {
-  border-style: dashed !important;
+    border-style: dashed !important;
 }
 
 .bds-db {
-  border-style: double !important;
+    border-style: double !important;
 }
 
 .bds-g {
-  border-style: groove !important;
+    border-style: groove !important;
 }
 
 .bds-r {
-  border-style: ridge !important;
+    border-style: ridge !important;
 }
 
 .bds-i {
-  border-style: inset !important;
+    border-style: inset !important;
 }
 
 .bds-o {
-  border-style: outset !important;
+    border-style: outset !important;
 }
